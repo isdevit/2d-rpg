@@ -7,12 +7,7 @@ using UnityEngine;
 public class saveData : MonoBehaviour
 {
     public bool hasSword;
-    /*
-     * @ pre none
-     * @ param none
-     * @ post save player's status to global control object
-     * @ return none
-     */
+   
     public void playerData()
     {
         if (GameObject.FindGameObjectWithTag("Player") != null)
@@ -21,12 +16,7 @@ public class saveData : MonoBehaviour
         }
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post copy player's inventory from global object to next scene's player
-     * @ return none
-     */
+  
     public void moveInventory()
     {
         GlobalControl.hasSword = ApplicationData.hasSword;

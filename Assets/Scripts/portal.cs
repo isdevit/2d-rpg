@@ -8,12 +8,7 @@ public class portal : MonoBehaviour
 {
     public objectVector teleportLocation;
     
-    /*
-     * @ pre none
-     * @ param a 2d collider
-     * @ post teleport the player to the place by desire
-     * @ return none
-     */
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other != null)

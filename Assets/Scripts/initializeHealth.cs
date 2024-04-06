@@ -7,12 +7,7 @@ public class initializeHealth : MonoBehaviour
 {
     static bool initialLoad = true;
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post Start is called before the first frame update
-     * @ return none
-     */
+   
     void Start()
     {
 
@@ -25,12 +20,7 @@ public class initializeHealth : MonoBehaviour
         initialLoad = false;
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post none
-     * @ return initialLoad
-     */
+  
     public bool getInitialLoad()
     {
         return initialLoad;

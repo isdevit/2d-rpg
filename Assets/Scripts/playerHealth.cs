@@ -29,12 +29,7 @@ public class playerHealth : MonoBehaviour
     private float flashCounter;
     private SpriteRenderer playerSprite;
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post start get called when script is triggered
-     * @ return none
-     */
+    
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -44,12 +39,7 @@ public class playerHealth : MonoBehaviour
         playerSprite = GetComponent<SpriteRenderer>();
     }
 
-    /*
-     * @ pre none
-     * @ param number of damage
-     * @ post damage the player by certain amount
-     * @ return none
-     */
+  
     public void harmPlayer(int damageAmount)
     {
         if (!invulnerable)
@@ -70,12 +60,7 @@ public class playerHealth : MonoBehaviour
 
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post the game is over if player heath is less or equal than 0
-     * @ return none
-     */
+    
     private void gameOver()
     {
         GetComponent<Collider2D>().enabled = false;
@@ -85,12 +70,7 @@ public class playerHealth : MonoBehaviour
         
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post repawn player after death in the town
-     * @ return none
-     */
+    
     public void respawn()
     {
         SceneManager.LoadScene(respawnLocation);
@@ -98,12 +78,7 @@ public class playerHealth : MonoBehaviour
         GetComponent<Collider2D>().enabled = true;
     }
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post update each frame
-     * @ return none
-     */
+   
     void Update()            
     {
         if (invulnerable)
@@ -186,67 +161,37 @@ public class playerHealth : MonoBehaviour
         }
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post destroy the player object
-     * @ return none
-     */
+   
     private void destroyPlayer()
     {
 //        Destroy(gameObject);
     }
 
-    /*
-     * @ pre none
-     * @ param amount of health
-     * @ post set player's health amount
-     * @ return none
-     */
+  
     public void setHealth(int healthAmount)
     {
         health = healthAmount;
     }
 
-    /*
-     * @ pre none
-     * @ param number of hearts
-     * @ post set the number of hearts that player has
-     * @ return none
-     */
+  
     public void setNumOfHearts(int numOfHeartsAmount)
     {
         numOfHearts = numOfHeartsAmount;
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post get the player's health
-     * @ return number of health
-     */
+  
     public int getHealth()
     {
         return health;
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post get the number of hearts that player has
-     * @ return number of hearts
-     */
+   
     public int getNumOfHearts()
     {
         return numOfHearts;
     }
 
-    /*
-     * @ pre none
-     * @ param amount of heal
-     * @ post heal player by certain amount
-     * @ return none
-     */
+    
     public void giveHealth(int healthAmount)
     {
         health += healthAmount;

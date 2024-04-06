@@ -19,12 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     public objectVector startPosition;
     
-    /**
-     ** @ pre none
-     ** @ param none
-     ** @ post gets called before frame gets updated and preset player's states to be walk
-     ** @ return none
-     **/
+    
     void Start() // Start is called before the first frame update
     {
         currentState = PlayerState.walk;
@@ -37,12 +32,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position = startPosition.initial;
     }
     
-    /**
-     ** @ pre none
-     ** @ param none
-     ** @ post update every frame to make sure player can have movement each frame
-     ** @ return none
-     **/
+    
     void Update() // Update is called once per frame
     {
         change = Vector3.zero;
@@ -59,12 +49,7 @@ public class PlayerMovement : MonoBehaviour
         //UpdateAnimationAndMove();
     }
     
-    /**
-     ** @ pre none
-     ** @ param none
-     ** @ post let player attack if player has sword
-     ** @ return none
-     **/
+    
     private IEnumerator AttackCo()        //runs in parallel to something
     {
         animator.SetBool("attacking", true);      //setting animation bool to true
@@ -75,12 +60,7 @@ public class PlayerMovement : MonoBehaviour
         currentState = PlayerState.walk;
     }
     
-    /**
-     ** @ pre none
-     ** @ param none
-     ** @ post player player's animation
-     ** @ return none
-     **/
+   
     void UpdateAnimationAndMove()
     {
         if (change != Vector3.zero) //if there actually is a change happening
@@ -96,12 +76,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    /**
-     * @ pre none
-     * @ param none
-     * @ post let player move as input demands
-     * @ return none
-     */
+   
     void MoveCharacter()
     {
         change.Normalize();

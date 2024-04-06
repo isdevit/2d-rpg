@@ -12,24 +12,14 @@ public class houseTransition : MonoBehaviour
     //the player moves between rooms
     //since the player can't go back anyway
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post start get call after scripts get triggered
-     * @ return none
-     */
+    
     private void Start()
     {
         camera = Camera.main;
         index = 1;
     }
 
-    /*
-     * @ pre none
-     * @ param a 2d collider
-     * @ post update the index so that the camera's new boundaries are related to the town
-     * @ return none
-     */
+   
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger)

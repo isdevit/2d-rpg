@@ -24,12 +24,7 @@ public class test : MonoBehaviour
         test8();
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player does not have sword by default
-     * @ return none
-     */
+    
     private void test1() 
     {
         Instantiate(Player);
@@ -48,12 +43,7 @@ public class test : MonoBehaviour
         }
        Destroy(Player);
     }
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player now has sword
-     * @ return none
-     */
+   
     private void test2() 
     {
         Instantiate(Player);
@@ -74,12 +64,7 @@ public class test : MonoBehaviour
         }
        Destroy(Player);
     }
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player static inventory works
-     * @ return none
-     */
+   
     private void test3()
     {
         Instantiate(Player);
@@ -100,12 +85,7 @@ public class test : MonoBehaviour
         Destroy(Player);
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player health after instantiating player health
-     * @ return none
-     */
+   
     private void test4() 
     {
         Instantiate(Player);
@@ -127,12 +107,7 @@ public class test : MonoBehaviour
         Destroy(Player);
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player health is static
-     * @ return none
-     */
+   
     private void test5()
     {
         Instantiate(Player);
@@ -153,12 +128,7 @@ public class test : MonoBehaviour
         Destroy(Player);
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player after taking damage
-     * @ return none
-     */
+  
     private void test6()
     {
         Instantiate(Player);
@@ -179,12 +149,7 @@ public class test : MonoBehaviour
         Destroy(Player);
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player give health
-     * @ return none
-     */
+    
     private void test7()
     {
         Instantiate(Player);
@@ -205,12 +170,7 @@ public class test : MonoBehaviour
         Destroy(Player);
     }
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post test player have correct number of hearts after initializing health
-     * @ return none
-     */
+   
     private void test8()
     {
         Instantiate(Player);

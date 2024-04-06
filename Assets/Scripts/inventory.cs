@@ -8,13 +8,7 @@ public class inventory : MonoBehaviour
     private static bool hasSword;
     private Animator animator;
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post get called before frame gets updated and check player has a sword or
-     *   not and apply animation for a sword if player has sword
-     * @ return none
-     */
+    
     void Start()  // Start is called before the first frame update
     {
         animator = GetComponent<Animator>();
@@ -25,12 +19,7 @@ public class inventory : MonoBehaviour
         }
     }
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post gives player sword
-     * @ return none
-     */
+   
     public void giveSword()
     {
         hasSword = true;
@@ -41,12 +30,7 @@ public class inventory : MonoBehaviour
         }
     }
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post helper function to check player has a sword or not
-     * @ return true if player has a sword, vice versa
-     */
+   
     public bool ActiveSword()
     {
         return hasSword;

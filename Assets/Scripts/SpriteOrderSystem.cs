@@ -5,12 +5,7 @@ using UnityEngine.Tilemaps;
 public class SpriteOrderSystem : MonoBehaviour
 {
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post update each frame
-     * @ return none
-     */
+   
     public void Update()
     {
         SpriteRenderer[] renderers = FindObjectsOfType <SpriteRenderer>();

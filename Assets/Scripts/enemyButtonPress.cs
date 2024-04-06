@@ -16,12 +16,7 @@ public class enemyButtonPress : MonoBehaviour
     public GameObject player;
 
     public GameObject door;
-    /*
-     * @ pre none
-     * @ param none
-     * @ post Start is called before the first frame update
-     * @ return none
-     */
+   
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -29,12 +24,7 @@ public class enemyButtonPress : MonoBehaviour
         buttonPressed = false;
     }
     
-    /*
-     * @ pre none
-     * @ param a 2d collider
-     * @ post check the enemy is pressed button or not
-     * @ return none
-     */
+   
     private void OnTriggerStay2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Enemy1"))
@@ -46,12 +36,7 @@ public class enemyButtonPress : MonoBehaviour
 
     }
     
-    /*
-     * @ pre none
-     * @ param a 2d collider
-     * @ post if button is pressed and mobs are dead, then open the door
-     * @ return none
-     */
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         buttonClick.pitch = 1;        //button on pitch is normal pitch of audio clips
@@ -69,12 +54,7 @@ public class enemyButtonPress : MonoBehaviour
 
     }
     
-    /*
-    * @ pre none
-    * @ param a 2d collider
-    * @ post check the red  button is pressed or not, if pressed play the button sound
-    * @ return none
-    */
+   
     private void OnTriggerExit2D(Collider2D other)
     {
         buttonClick.pitch = 0.85F;        //button off click is pitched slightly lower

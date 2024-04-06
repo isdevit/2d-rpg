@@ -12,12 +12,7 @@ public class spikesAllEnemiesDead : MonoBehaviour
     private Animator animator;
     public GameObject player;
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post get called before frame update and check number of mobs in the scene
-     * @ return none
-     */
+   
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -25,12 +20,7 @@ public class spikesAllEnemiesDead : MonoBehaviour
         enemySpawned = false;
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post get called every frame to check if there is any mob in the scene
-     * @ return none
-     */
+   
     void Update() // Update is called once per frame
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy"); //MAKE SURE TO TAG ENEMY AS "ENEMY"

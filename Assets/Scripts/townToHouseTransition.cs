@@ -12,24 +12,14 @@ public class townToHouseTransition : MonoBehaviour
     //the player moves between rooms
     //since the player can't go back anyway
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post Start is called before the first frame update
-     * @ return none
-     */
+    
     private void Start()
     {
         camera = Camera.main;
         index = 0;
     }
 
-    /*
-     * @ pre none
-     * @ param a 2d collider
-     * @ post teleport player to next room
-     * @ return none
-     */
+    
     public void OnTriggerEnter2D(Collider2D other)
     {
 

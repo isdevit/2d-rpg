@@ -15,23 +15,13 @@ public class CameraMovement : MonoBehaviour
     public objectVector[] minPosition;
     private int index;    //used to move through the object vector array to change the camera's location as
                           //the player moves between rooms
-  /*
-   * @ pre none
-   * @ param none
-   * @ post  default function get called when script runs
-   * @ return none
-   */
+  
     private void Start()
     {
         index = 0;    //initialize to 0
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post  every frame this function get called to stick camera with player
-     * @ return none
-     */
+    
     void LateUpdate()
     {
         if (transform.position != target.position)
@@ -51,12 +41,7 @@ public class CameraMovement : MonoBehaviour
                 smoothingSpeed);
         }
     }
-    /*
-   * @ pre none
-   * @ param new index
-   * @ post  set the camera index
-   * @ return none
-   */
+    
     public void SetIndex(int newIndex)
     {
         index = newIndex;

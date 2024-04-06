@@ -17,12 +17,7 @@ public class buttonPress : MonoBehaviour
     public AudioClip buttonAudio;
     
     
-    /*
-    * @ pre none
-    * @ param none
-    * @ post Start is called before the first frame update
-    * @ return none
-    */
+    
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -32,12 +27,7 @@ public class buttonPress : MonoBehaviour
 
     }
 
-    /*
-    * @ pre none
-    * @ param none
-    * @ post Update is called once per frame
-    * @ return none
-    */
+    
     void Update()
     {
         if (enemiesNotYetSpawned && redButtonPressed && blueButtonPressed)
@@ -50,12 +40,7 @@ public class buttonPress : MonoBehaviour
         }
     }
 
-    /*
-    * @ pre none
-    * @ param a 2d collider
-    * @ post box puzzle: compare box color with button color
-    * @ return none
-    */
+  
     private void OnTriggerStay2D(Collider2D other)
     {
         if (gameObject.CompareTag("blueButton"))
@@ -78,12 +63,7 @@ public class buttonPress : MonoBehaviour
 
     }
     
-    /*
-    * @ pre none
-    * @ param a 2d collider
-    * @ post box puzzle: compare box color with button color
-    * @ return none
-    */
+  
     private void OnTriggerEnter2D(Collider2D other)
     {
         buttonClick.pitch = 1;        //button on pitch is normal pitch of audio clips
@@ -106,12 +86,7 @@ public class buttonPress : MonoBehaviour
 
     }
 
-    /*
-    * @ pre none
-    * @ param a 2d collider
-    * @ post box puzzle: check two boxes are matched
-    * @ return none
-    */
+  
     private void OnTriggerExit2D(Collider2D other)
     {
         buttonClick.pitch = 0.85F;        //button off click is pitched slightly lower

@@ -16,24 +16,14 @@ public class openChest : MonoBehaviour
     private Collider2D  Player;
     private Animator anim; 
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post get called before frame gets updated and check the chest is able to open or not
-     * @ return none
-     */
+    
     void Start() // Start is called before the first frame update
     {
         chestOpen = false;
         anim = GetComponent<Animator>();
     }
     
-    /*
-     * @ pre none
-     * @ param a collider2D object
-     * @ post if player collider intersect with other collider function got called and open a chest for player
-     * @ return none
-     */
+  
     private void OnTriggerStay2D(Collider2D other)
     {
         if(other.gameObject.CompareTag(tagName) && Input.GetKeyDown("space") && !chestOpen)
@@ -44,35 +34,20 @@ public class openChest : MonoBehaviour
         }
     }
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post set the chest status to be opened
-     * @ return none
-     */
+    
     private void chestIsOpen()
     {
         chestOpen = true;
       
     }
     
-    /*
-     * @ pre none
-     * @ param none
-     * @ post spawn an enemy for player if chest is opened
-     * @ return none
-     */
+    
     private void spawnEnemy()
     {
         Instantiate(Enemy);
     }
 
-    /*
-     * @ pre none
-     * @ param none
-     * @ post give player sword once chest is open
-     * @ return none
-     */
+    
     private void giveSword()
     {
         if (Player != null)

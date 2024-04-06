@@ -14,12 +14,7 @@ public class Transition : MonoBehaviour
     public GameObject player;
     public saveData playerSave; 
     
-    /*
-     * @ pre none
-     * @ param a collider2D object
-     * @ post if player collider intersect with other collider function got called and load the next scene
-     * @ return none
-     */
+    
     
     public void OnTriggerEnter2D(Collider2D other)
     {

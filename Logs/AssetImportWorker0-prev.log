@@ -1,0 +1,479 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.20f1 (61c2feb0970d) revision 6406910'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16236 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ashis/Forgotten Souls
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54020
+Successfully changed project path to: C:/Users/ashis/Forgotten Souls
+C:/Users/ashis/Forgotten Souls
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12676] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1178953561 [EditorId] 1178953561 [Version] 1048832 [Id] WindowsEditor(7,Legion) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12676] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1178953561 [EditorId] 1178953561 [Version] 1048832 [Id] WindowsEditor(7,Legion) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 26.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.20f1 (61c2feb0970d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ashis/Forgotten Souls/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25e2)
+    Vendor:   NVIDIA
+    VRAM:     3964 MB
+    Driver:   31.0.15.5186
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008106 seconds.
+- Loaded All Assemblies, in  0.317 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 214 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.511 seconds
+Domain Reload Profiling: 826ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (94ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (128ms)
+			TypeCache.Refresh (127ms)
+				TypeCache.ScanAssembly (115ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (511ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (463ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (310ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Assembly 'Assets/ExternalDependencyManager/Editor/1.2.179/Google.IOSResolver.dll' will not be loaded due to errors:
+Unable to resolve reference 'UnityEditor.iOS.Extensions.Xcode'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+Symbol file LoadedFromMemory is not a mono symbol file
+Assembly 'Assets/Firebase/Editor/Firebase.Editor.dll' will not be loaded due to errors:
+Unable to resolve reference 'UnityEditor.iOS.Extensions.Xcode'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+- Loaded All Assemblies, in  0.581 seconds
+Refreshing native plugins compatible for Editor in 9.61 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 1104ms
+	BeginReloadAssembly (135ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (361ms)
+		LoadAssemblies (310ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (110ms)
+				TypeCache.ScanAssembly (94ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (528ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (399ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (268ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 11.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2900 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (44.2 KB). Loaded Objects now: 3369.
+Memory consumption went from 139.3 MB to 139.2 MB.
+Total: 3.491200 ms (FindLiveObjects: 0.267200 ms CreateObjectMapping: 0.102800 ms MarkObjects: 3.005200 ms  DeleteObjects: 0.114600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 138917.698395 seconds.
+  path: Assets/title_new2.png
+  artifactKey: Guid(3e674055c609d3d4f8556f3e30cdabcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/title_new2.png using Guid(3e674055c609d3d4f8556f3e30cdabcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51e78a2dd68895c31fd00d90d91fd0a') in 0.068178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/0x72_DungeonTilesetII_v1.3/frames/tiny_zombie_run_anim_f3.png
+  artifactKey: Guid(8cbbcc9295c7541d89dadbfdd28b30f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0x72_DungeonTilesetII_v1.3/frames/tiny_zombie_run_anim_f3.png using Guid(8cbbcc9295c7541d89dadbfdd28b30f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bc2fb0f172a5ba3d4a399683fd96fc') in 0.015550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Assembly 'Assets/ExternalDependencyManager/Editor/1.2.179/Google.IOSResolver.dll' will not be loaded due to errors:
+Unable to resolve reference 'UnityEditor.iOS.Extensions.Xcode'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+Symbol file LoadedFromMemory is not a mono symbol file
+Assembly 'Assets/Firebase/Editor/Firebase.Editor.dll' will not be loaded due to errors:
+Unable to resolve reference 'UnityEditor.iOS.Extensions.Xcode'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+- Loaded All Assemblies, in  0.806 seconds
+Refreshing native plugins compatible for Editor in 11.58 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.800 seconds
+Domain Reload Profiling: 1602ms
+	BeginReloadAssembly (484ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (314ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (800ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (370ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (248ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 11.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2881 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (45.8 KB). Loaded Objects now: 3380.
+Memory consumption went from 136.6 MB to 136.6 MB.
+Total: 3.077200 ms (FindLiveObjects: 0.237900 ms CreateObjectMapping: 0.092600 ms MarkObjects: 2.640900 ms  DeleteObjects: 0.105100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 223.560300 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edef94f9eff58c353774c15b26b2db4') in 0.124661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 11.40 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3420.
+Memory consumption went from 92.0 MB to 92.0 MB.
+Total: 3.256200 ms (FindLiveObjects: 0.221500 ms CreateObjectMapping: 0.075500 ms MarkObjects: 2.940600 ms  DeleteObjects: 0.018000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 886.033704 seconds.
+  path: Assets/v1.1 dungeon crawler 16x16 pixel pack/props_itens/torch_anim_f4.png
+  artifactKey: Guid(3c5bddc59def64634b14672aef505d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/v1.1 dungeon crawler 16x16 pixel pack/props_itens/torch_anim_f4.png using Guid(3c5bddc59def64634b14672aef505d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8f952cb52fcc62d9adf59d1b13eb91') in 0.075175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-side.png
+  artifactKey: Guid(4dbf9e4cb148c4dc991ed1bfc861e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-side.png using Guid(4dbf9e4cb148c4dc991ed1bfc861e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed9ee9a871ddf09c4b106815c24521e') in 0.028699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-front.png
+  artifactKey: Guid(06a287cc97cb64df8a11af10f2352365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-front.png using Guid(06a287cc97cb64df8a11af10f2352365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e513dd5a282d745c77342fae172d2f7') in 0.023184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-back.png
+  artifactKey: Guid(b51d18577d0ec4d29b81998d983bd710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/treant/idle/treant-idle-back.png using Guid(b51d18577d0ec4d29b81998d983bd710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5013302281da27090244bb1d4e21a11') in 0.022936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.757394 seconds.
+  path: Assets/MainDungeonSprites_Fixed/frames/wall_goo_base.png
+  artifactKey: Guid(93247b39e61e94c1ba3786b9a280a7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainDungeonSprites_Fixed/frames/wall_goo_base.png using Guid(93247b39e61e94c1ba3786b9a280a7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa05091b7d8e9e34a47f1cf395d46619') in 0.046523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MainDungeonSprites_Fixed/frames/weapon_baton_with_spikes.png
+  artifactKey: Guid(98aecebfcf4ec466bbbfc558fe741d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainDungeonSprites_Fixed/frames/weapon_baton_with_spikes.png using Guid(98aecebfcf4ec466bbbfc558fe741d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07733ae96d7b2c77a0947fa7e3ae1f05') in 0.012497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.437012 seconds.
+  path: Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-3.png
+  artifactKey: Guid(bfef331f8be9543878401898984e83c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiny RPG Forest/Artwork/sprites/treant/walk/treant-walk-back/treant-walk-back-3.png using Guid(bfef331f8be9543878401898984e83c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf306b0eb89abee35073783d4f0b620') in 0.016977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 43.890833 seconds.
+  path: Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_spritesheet.png
+  artifactKey: Guid(b73159cfe0ce644c1b249175f0787042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_spritesheet.png using Guid(b73159cfe0ce644c1b249175f0787042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec658c6c7e94334ea0f6398e6a35ff13') in 0.022289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.441560 seconds.
+  path: Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_anim_f4.png
+  artifactKey: Guid(a78990778100f4e718c674b5fb188025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_anim_f4.png using Guid(a78990778100f4e718c674b5fb188025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97894b95901b29a1dd303a2df7359656') in 0.020432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.677181 seconds.
+  path: Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_anim_f3.png
+  artifactKey: Guid(028b4071c1eb247d3b99351380ed4cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_anim_f3.png using Guid(028b4071c1eb247d3b99351380ed4cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5fa1560f1334c1a304b0258c70b52a') in 0.025361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.112279 seconds.
+  path: Assets/0x72_DungeonTilesetII_v1.3/frames/goblin_run_anim_f2.png
+  artifactKey: Guid(a90ee8d3939474af680e403e6e20ac0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0x72_DungeonTilesetII_v1.3/frames/goblin_run_anim_f2.png using Guid(a90ee8d3939474af680e403e6e20ac0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96585d3bf4b7fa4b465f9afba5b72b49') in 0.024385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.094401 seconds.
+  path: Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_anim_f1.png
+  artifactKey: Guid(4a9fa9b6106e24224878eac07a419dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_run_anim_f1.png using Guid(4a9fa9b6106e24224878eac07a419dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58151ea6a4a0582d9fae7e52e2d803c') in 0.030405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.207556 seconds.
+  path: Assets/MainDungeonSprites_Fixed/frames/goblin_run_anim_f0.png
+  artifactKey: Guid(2e3c1c983fcac49869173b9de6274bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainDungeonSprites_Fixed/frames/goblin_run_anim_f0.png using Guid(2e3c1c983fcac49869173b9de6274bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31781d04a083b8be1c065c2bdabb7c9c') in 0.025220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006155 seconds.
+  path: Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_idle_anim_f5.png
+  artifactKey: Guid(eb3c51a8f22f14321ac829a1671f96ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/v1.1 dungeon crawler 16x16 pixel pack/enemies/goblin/goblin_idle_anim_f5.png using Guid(eb3c51a8f22f14321ac829a1671f96ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daacaf97cd6c6946e216ff00da4e0a1f') in 0.027224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.218712 seconds.
+  path: Assets/0x72_DungeonTilesetII_v1.3/frames/goblin_idle_anim_f3.png
+  artifactKey: Guid(eb6b66ae05b854f1a84704486c938478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0x72_DungeonTilesetII_v1.3/frames/goblin_idle_anim_f3.png using Guid(eb6b66ae05b854f1a84704486c938478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae522fe45e1756ab651eae50e3f804db') in 0.018587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.556878 seconds.
+  path: Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-text-box.png
+  artifactKey: Guid(b0ae239e951694064b31daa7e9cf0da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/UI/generic-rpg-ui-text-box.png using Guid(b0ae239e951694064b31daa7e9cf0da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4336b794f79cadf43cd93d96ddd48c') in 0.027442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.257433 seconds.
+  path: Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/tiles/generic-rpg-tile71.png
+  artifactKey: Guid(f838bd917223e4e20acf1627dd56a972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/tiles/generic-rpg-tile71.png using Guid(f838bd917223e4e20acf1627dd56a972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90421f0fc7d908a43f76134a7f3a24dc') in 0.024893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007702 seconds.
+  path: Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree02.png
+  artifactKey: Guid(cfe02cb14422840a48b6cf328224f35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/props n decorations/generic-rpg-tree02.png using Guid(cfe02cb14422840a48b6cf328224f35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a709c6f056e3a79b0019f0eaf3ae0ac') in 0.028284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.233245 seconds.
+  path: Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/tiles/generic-rpg-tile67.png
+  artifactKey: Guid(7ccdaf52fe6224e62a3bb190c68ad570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/generic-rpg-pack_v0.3_(alpha-release)_vacaroxa/rpg-pack/tiles/generic-rpg-tile67.png using Guid(7ccdaf52fe6224e62a3bb190c68ad570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e190baa9d807b1a40b132564f2a636e8') in 0.022067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 20.521769 seconds.
+  path: Assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Character.png
+  artifactKey: Guid(c7d8c84ecd1054a96beb67c956a9db7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D Pixel Dungeon Asset Pack/character and tileset/Dungeon_Character.png using Guid(c7d8c84ecd1054a96beb67c956a9db7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb2592d5fdae69ad81ab685f958efd2') in 0.026569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

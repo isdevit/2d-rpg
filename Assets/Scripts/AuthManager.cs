@@ -7,6 +7,10 @@ using TMPro;
 using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
 
+using Firebase.Database;
+using Firebase.Extensions;
+using UnityEngine.SceneManagement;
+
 public class AuthManager : MonoBehaviour
 {
     //Firebase Variables
@@ -30,6 +34,9 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
 
+    private DatabaseReference reference;
+    private WaitForSeconds saveInterval = new WaitForSeconds(10f);
+
     void Awake()
     {
         //Check that all of the necessary dependencies for Firebase are present on the system
@@ -46,11 +53,13 @@ public class AuthManager : MonoBehaviour
                 Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
             }
         });
+       
     }
     private void InitializeFirebase()
     {
         Debug.Log("Setting up Firebase Auth");
         //Set the authentication instance object
+        reference = FirebaseDatabase.DefaultInstance.RootReference;
         auth = FirebaseAuth.DefaultInstance;
     }
 
@@ -110,6 +119,8 @@ public class AuthManager : MonoBehaviour
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
             SceneManager.LoadScene("menu");
+            // Start coroutine to save player data every 10 seconds
+            StartCoroutine(SavePlayerDataPeriodically());
         }
     }
 
@@ -193,4 +204,60 @@ public class AuthManager : MonoBehaviour
         }
     }
 
+    IEnumerator SavePlayerDataPeriodically()
+    {
+        while (true)
+        {
+            yield return saveInterval;
+
+            SavePlayerData();
+        }
+    }
+
+    void SavePlayerData()
+    {
+        if (auth != null && auth.CurrentUser != null)
+        {
+            string userId = auth.CurrentUser.UserId;
+            string sceneId = SceneManager.GetActiveScene().name;
+            GameObject playerGameObject = GameObject.FindGameObjectWithTag("Player");
+
+            if (playerGameObject != null)
+            {
+                Vector3 playerPosition = playerGameObject.transform.position;
+
+                // Create player data object
+                PlayerData playerData = new PlayerData
+                {
+                    scene = sceneId,
+                    position = playerPosition
+                };
+
+                // Convert player data to JSON string
+                string json = JsonUtility.ToJson(playerData);
+
+                // Save player data to Firebase
+                reference.Child("players").Child(userId).SetRawJsonValueAsync(json).ContinueWithOnMainThread(task =>
+                {
+                    if (task.IsFaulted)
+                    {
+                        Debug.LogError($"Failed to save player data to Firebase: {task.Exception}");
+                    }
+                    else
+                    {
+                        Debug.Log("Player data saved to Firebase successfully.");
+                    }
+                });
+            }
+            else
+            {
+                Debug.LogWarning("Player GameObject with tag 'Player' not found.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Firebase authentication is not initialized or user is not authenticated.");
+        }
+    }
 }
+
